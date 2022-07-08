@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import java.io.*;
 import java.net.Socket;
 
-public class Client1 {
+public class Client {
     BufferedReader keyboard;
     BufferedReader getMessage;
     PrintWriter writer;
@@ -13,7 +13,7 @@ public class Client1 {
     JTextArea incoming;
 
     public static void main(String[] args) {
-        Client1 c = new Client1();
+        Client c = new Client();
         c.buildGUI();
         c.connectToTheServer();
     }
